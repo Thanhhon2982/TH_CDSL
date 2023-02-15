@@ -129,3 +129,9 @@ ALTER DATABASE Sales MODIFY NAME = BanHang;
 
 -- 14. Tạo bản BackUp cho CSDL BanHang
 Backup database Sales to disk = 'C:\Backup'
+
+-- 15.Xóa CSDL BanHang
+DROP DATABASE BanHang;
+
+-- 16.Phục hồi lại CSDL BanHang.
+Restore database TestDB from disk = 'C:\backup' with replace
