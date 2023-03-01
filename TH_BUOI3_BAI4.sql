@@ -54,7 +54,7 @@ select TENDEAN, TENPHG, HONV+ ' ' +TENLOT+ ' ' +TENNV as 'Họ và tên', NG_NHA
 from NHANVIEN inner join PHONGBAN 
 ON NHANVIEN.PHG = PHONGBAN.MAPHG 
 inner join DEAN ON DEAN.PHONG = PHONGBAN.MAPHG
-where PHONGBAN.TRPHG = NHANVIEN.MANV and DCHI like '%Tp Quảng Ngãi'
+where PHONGBAN.TRPHG = NHANVIEN.MANV and DDIEM_DA like '%Tp Quảng Ngãi'
 
 --14. Tìm tên những nữ nhân viên và tên người thân của họ
 
